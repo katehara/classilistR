@@ -1,11 +1,11 @@
 Package: classilistR
-Title: What the Package Does (one line, title case)
+Title: R-package to connect to Classilist Application
 Version: 0.0.0.9000
 Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: Takes in data and its attribute categories to process data suitable for visualization in classilist application developed as a project in GSoC'16 and launches the application after exporting the data to it.
 Depends:
     R (>= 3.0.2)
-License: What license is it under?
+License: GPL 3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1.9000
