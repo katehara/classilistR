@@ -26,8 +26,8 @@ validateClasses <- function(classes , probs){
     
     else {
       probs <- gsub(x = probs, pattern = "\\.", replacement = " ")
-      else if(all(classes == probs)) return(1000) 
-      {
+      if(all(classes == probs)) return(1000) 
+      else {
         count <- count+1
         print("Error : Class Probability Columns must be named same as class name for accurate mapping")
         print("Try to read the data with option \"check.names=FALSE\" to avoid Dots in headers.")
