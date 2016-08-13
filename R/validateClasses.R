@@ -22,14 +22,16 @@ validateClasses <- function(classes , probs){
   }
   
   if(length(classes) == length(probs)){
-    if(all(classes != probs)){
+    if(all(classes == probs)){}
+    
+    else {
       probs <- gsub(x = probs, pattern = "\\.", replacement = " ")
-      if(all(classes != probs)){
+      else if(all(classes == probs)) return(1000) 
+      {
         count <- count+1
         print("Error : Class Probability Columns must be named same as class name for accurate mapping")
         print("Try to read the data with option \"check.names=FALSE\" to avoid Dots in headers.")
       }
-      else return(1000)
     }
   }
   if(count != 0) return(0)
