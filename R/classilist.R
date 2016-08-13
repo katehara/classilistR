@@ -51,7 +51,7 @@ classilist <- function(dataSet , location , features  , predicted , actual , pro
       }
     }
     write.csv(dataSet , file = paste(location , "/data/out.csv" , sep = "") , row.names = FALSE) 
-    browseURL(url = paste(location , "/index.html" , sep = ""), browser = getOption("browser"),encodeIfNeeded = FALSE)
+    browseURL(url = paste("file:///" , location , "/index.html" , sep = ""), browser = getOption("browser"),encodeIfNeeded = FALSE)
   } 
   
   else {
